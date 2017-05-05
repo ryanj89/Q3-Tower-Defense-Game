@@ -62,7 +62,6 @@ public class JwtGetter : MonoBehaviour {
 		// check for errors
 		if (www.error == null)
 		{
-			Debug.Log("WWW Ok!: " + www.data);
 			if (www.data == "") {
 			
 				generateUserNameGetter ();
@@ -73,9 +72,7 @@ public class JwtGetter : MonoBehaviour {
 				username = www.data;
 
 			}
-		} else {
-			Debug.Log("WWW Error: "+ www.error);
-		}    
+		}  
 	}
 
 	public void generateUserNameGetter () {

@@ -69,7 +69,6 @@ public class TowerSelector : MonoBehaviour {
 		}
 		
 		if (updateTexts) {
-//			Debug.Log ("updateTexts");
 			sellText.text = "+" + towerSellPrice.ToString ();
 			upgradeText.text = "-" + towerUpgradePrice.ToString ();
 			healText.text = "-" + towerHealPrice.ToString ();
@@ -95,7 +94,6 @@ public class TowerSelector : MonoBehaviour {
 
 
 				if (!(towerHealPrice <= 0f)) {
-//					Debug.Log ("hitting here");
 					heal.SetActive (true);
 				} else {
 					heal.SetActive (false);

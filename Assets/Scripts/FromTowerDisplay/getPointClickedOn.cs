@@ -14,7 +14,6 @@ public class getPointClickedOn : MonoBehaviour {
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			float distance;
 			if (ground.Raycast (ray, out distance)) {
-//				Debug.Log("point hit");
 
 
 			}

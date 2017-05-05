@@ -11,6 +11,8 @@ TagManager:
   - Enemy
   - UpgradeManager
   - QuatlooObject
+  - placedTowers
+  - manager
   layers:
   - Default
   - TransparentFX

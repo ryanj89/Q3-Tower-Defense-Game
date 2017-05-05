@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 114418093506780256}
   m_Layer: 0
   m_Name: Manager
-  m_TagString: Untagged
+  m_TagString: manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d59c764f51d496eadbfe647bcaa383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverScreen: {fileID: 0}
+  env: {fileID: 0}
 --- !u!114 &114418093506780256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -163,6 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a7027542dafe48d2b5d13501721ff12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPosition: {fileID: 0}
   StartDelay: 3
   EndDelay: 3
   startingTime: 0
@@ -171,9 +174,9 @@ MonoBehaviour:
   waveText: {fileID: 0}
   energyCore: {fileID: 0}
   waveSpawner: {fileID: 0}
-  scoreManager: {fileID: 114942545793401016}
-  killManager: {fileID: 0}
+  waveZoom: {fileID: 0}
   playerStats: {fileID: 11400000, guid: b0756c43b31c84a848a8d2cb69fe25ea, type: 2}
+  anim: {fileID: 0}
   scoreSubmission: {fileID: 114278782411711332}
 --- !u!114 &114942545793401016
 MonoBehaviour:

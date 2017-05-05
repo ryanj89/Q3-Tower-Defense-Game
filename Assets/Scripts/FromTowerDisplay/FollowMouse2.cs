@@ -58,7 +58,6 @@ public class FollowMouse2 : MonoBehaviour {
 	{
 		changeSelection (); 
 		if (towerSelected) {
-			//			Debug.Log ("getting shit here?");
 			if (allowCreation) {
 				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 				float distance;
@@ -117,7 +116,6 @@ public class FollowMouse2 : MonoBehaviour {
 	IEnumerator resetCreate()
 	{
 		yield return new WaitForSeconds(cooldown);
-//		Debug.Log ("Cooldown Happenin");
 		allowCreation = true;
 	}
 
@@ -153,7 +151,6 @@ public class FollowMouse2 : MonoBehaviour {
 		if (ground.Raycast (ray, out distance)) {
 			Vector3 startPoint = ray.GetPoint (distance);
 			towerToPlace = Instantiate (tower, startPoint, newTowerRotation);
-			//			Debug.Log (towerToPlace);
 			makeTranslucent (towerToPlace);
 		}
 	}
@@ -222,7 +219,6 @@ public class FollowMouse2 : MonoBehaviour {
 	//	IEnumerator stopDuplicates()
 	//	{
 	//		yield return new WaitForSeconds(0.2f);
-	//		Debug.Log ("StopDup Cooldown has happened.");
 	//		allowTrigger = true;
 	//	}
 

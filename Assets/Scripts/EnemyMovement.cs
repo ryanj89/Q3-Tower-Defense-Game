@@ -72,11 +72,12 @@ public class EnemyMovement : MonoBehaviour
         {
             Debug.DrawRay (transform.position, currentTarget.transform.forward.normalized * lookRange, Color.cyan);
             // Use SphereCast to determine if a player is within field-of-view
-            if (Physics.SphereCast(transform.position, lookSphereCastRadius, transform.forward, out hit, lookRange)
-                && hit.collider.CompareTag("Player"))
-            {
-                currentTarget = hit.transform;
-            }
+			if (Physics.SphereCast (transform.position, lookSphereCastRadius, transform.forward, out hit, lookRange)
+			             && hit.collider.CompareTag ("Player")) {
+				currentTarget = hit.transform;
+			} else {
+				currentTarget = playerBase;
+			}
         }
   }
 
@@ -97,6 +98,10 @@ public class EnemyMovement : MonoBehaviour
         agent.SetDestination (currentTarget.position);
         agent.isStopped = false;
   }
+	public Transform getCurrentTarget()
+	{
+		return currentTarget;
+	}
 
   void OnDrawGizmos()
   {

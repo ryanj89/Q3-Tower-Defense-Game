@@ -52,6 +52,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 492756, guid: 59f19d02cd3474c458d754fc7cabcd81, type: 2}
+  Gromm: {fileID: 4158802569532772, guid: a0b91dcae1dd042ac8e1224488d2a0ad, type: 2}
+  redGromm: {fileID: 4158802569532772, guid: 4f46b5b4bc4e248f8b96f38e222fd6b1, type: 2}
   numberOfEnemies: 10
   timeBetweenWaves: 10
   spawnRate: 0.5

@@ -86,5 +86,15 @@ public class PlacedTowerManager : MonoBehaviour {
 		}
 		return false;
 	}
+	public bool nonRubbleTowerExistsHere(Vector3 towerLocation)
+	{
+		if (towerExistsHere (towerLocation)) {
+			GameObject tower = retrieveSpecificTower (towerLocation);
+			TowerInfo towerInfo = tower.GetComponent<TowerInfo> ();
+			return towerInfo.isNotRubble;
+		} else {
+			return false;
+		}
+	}
 
 }

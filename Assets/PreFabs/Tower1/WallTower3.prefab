@@ -333,7 +333,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c36d0dd2c575b41c685d824c58abcf2d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.608
+  m_Volume: 0.421
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -413,14 +413,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de85855d73a774c0984cf4abbd2378f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 18
-  attackDamageRate: 1
+  attackRange: 36
+  attackDamageRate: 0.5
   attackDamage: 10
   rotationSpeed: 10
   firePoint: {fileID: 4746210003977492}
   lineRenderer: {fileID: 120619381763415624}
   currentTarget: {fileID: 0}
-  laserParticlePrefab: {fileID: 1837545260499062, guid: c764c835ae15e4600b79d270e3401c50,
+  laserParticlePrefab: {fileID: 1491104029718420, guid: 178049b1f800f422d94a9fb897fb39e4,
     type: 2}
   fireSound: {fileID: 82235427301431976}
   laserFire: {fileID: 8300000, guid: 7e80ca94844e74783978b75560c9bc1c, type: 3}
@@ -489,6 +489,7 @@ MonoBehaviour:
   towerCost: 115
   sellForAmt: 155
   upgradeCost: 0
+  isNotRubble: 1
   diamondCost: 12
   diamondUpgradeCost: 0
 --- !u!114 &114206937869644130
@@ -570,7 +571,7 @@ MonoBehaviour:
   currentHealth: 200
   slider: {fileID: 114575194241126674}
   fillImage: {fileID: 114777352797763860}
-  fullHealthColor: {r: 0, g: 1, b: 0, a: 1}
+  fullHealthColor: {r: 0, g: 1, b: 0, a: 0.516}
   zeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
   destructionManager: {fileID: 0}
   towerAttack: {fileID: 0}

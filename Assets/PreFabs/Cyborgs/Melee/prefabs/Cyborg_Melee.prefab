@@ -1766,6 +1766,7 @@ MonoBehaviour:
   firingParticlePrefab: {fileID: 0}
   firePoint: {fileID: 0}
   hitTower: {fileID: 0}
+  attackDelay: 0
 --- !u!114 &114787473115753598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1809,7 +1810,7 @@ MonoBehaviour:
   sinkSpeed: 1
   scoreValue: 10
   deathClip: {fileID: 0}
-  killBonus: 15
+  killBonus: 13
   quatlooObject: {fileID: 0}
   quatlooManager: {fileID: 0}
   energyCore: {fileID: 1066814443610428, guid: 6537733ee14de435c8bb528a122a150b, type: 2}

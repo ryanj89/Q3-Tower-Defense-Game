@@ -15,7 +15,7 @@ public class EnemyHealth : MonoBehaviour
 	public GameObject energyCore;
 	public PlayerStats playerStats;
 	TowerHealth coreHealth;
-
+	Manager manager;
 
   	[Header("Health UI")]
   	public Image healthFillImage;
@@ -34,6 +34,32 @@ public class EnemyHealth : MonoBehaviour
 	void Awake ()
 	{
 		// Setting up references.
+		manager = GameObject.FindGameObjectWithTag("manager").GetComponent<Manager>();
+		float randomNumber = UnityEngine.Random.Range (0f, (float)manager.getRoundNumber());
+		startingHealth += Mathf.FloorToInt(randomNumber * 5f);
+//		killBonus -= Mathf.FloorToInt((int)manager.getRoundNumber () / 2.5f);
+//		if (killBonus < 0) {
+//			killBonus = 0;
+//		}
+		int roundNumber = manager.getRoundNumber();
+		if (roundNumber >= 3) {
+			killBonus -= 1;
+			if (roundNumber >= 5) {
+				killBonus -= 2;
+				if (roundNumber >= 7) {
+					killBonus -= 1;
+					if (roundNumber >= 9) {
+						killBonus -= 2;
+					}
+				}
+			}
+		}
+		if (roundNumber >= 12) {
+			killBonus = 1;
+		}
+		if (roundNumber >= 15) {
+			killBonus = 0;
+		} 
 		quatlooObject = GameObject.FindGameObjectWithTag("QuatlooObject");
 		quatlooManager = quatlooObject.GetComponent<QuatlooManager> ();
 		anim = GetComponent <Animator> ();
@@ -124,7 +150,7 @@ public class EnemyHealth : MonoBehaviour
 //		if (coreHealth.currentHealth <= 0f)
 		playerStats.totalScore += 5;
 
-//		Debug.Log (playerStats.enemyKills);
+//		 (playerStats.enemyKills);
 	}
 
 

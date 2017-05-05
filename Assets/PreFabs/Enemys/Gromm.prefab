@@ -684,7 +684,6 @@ GameObject:
   - component: {fileID: 114258482199654484}
   - component: {fileID: 114264378970751254}
   - component: {fileID: 114781045938045822}
-  - component: {fileID: 114021633009699032}
   - component: {fileID: 136326808808483316}
   - component: {fileID: 54394490941230214}
   m_Layer: 8
@@ -1719,8 +1718,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1478787152413234}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -15, y: 0, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.350114, y: 0.28143528, z: 13.625706}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4124818009454374}
   - {fileID: 4392462401784096}
@@ -2744,25 +2743,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114021633009699032
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1478787152413234}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2030a509b0cdb4e8faf6ac5a26021fa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyStats: {fileID: 11400000, guid: fd77703f87f46485899bbf4df19399d5, type: 2}
-  eyes: {fileID: 4124818009454374}
-  currentState: {fileID: 11400000, guid: 1676afc90d8f7457186a26876eff7cd4, type: 2}
-  remainState: {fileID: 0}
-  navMeshAgent: {fileID: 0}
-  enemyAttack: {fileID: 0}
-  playerBase: {fileID: 0}
-  chaseTarget: {fileID: 0}
 --- !u!114 &114182564300975352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2804,7 +2784,7 @@ MonoBehaviour:
   playerBase: {fileID: 0}
   currentTarget: {fileID: 0}
   eyes: {fileID: 4124818009454374}
-  speed: 5
+  speed: 3
   lookRange: 10
   lookSphereCastRadius: 3
 --- !u!114 &114264378970751254
@@ -2818,15 +2798,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1660a18569a4c2ea437d161957454e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
+  startingHealth: 1800
   currentHealth: 0
   sinkSpeed: 2.5
   scoreValue: 10
   deathClip: {fileID: 0}
-  killBonus: 30
+  killBonus: 120
   quatlooObject: {fileID: 0}
   quatlooManager: {fileID: 0}
-  energyCore: {fileID: 0}
+  energyCore: {fileID: 1066814443610428, guid: 6537733ee14de435c8bb528a122a150b, type: 2}
   playerStats: {fileID: 11400000, guid: b0756c43b31c84a848a8d2cb69fe25ea, type: 2}
   healthFillImage: {fileID: 114385372748651300}
   healthBar: {fileID: 223894883649285664}
@@ -2886,13 +2866,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a72f7a18a57fd499e8ab22332c2feef9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 10
-  timeBetweenAttacks: 1
-  attackDamage: 10
+  range: 6
+  timeBetweenAttacks: 2.5
+  attackDamage: 40
   canShoot: 0
   firingParticlePrefab: {fileID: 0}
   firePoint: {fileID: 0}
   hitTower: {fileID: 0}
+  attackDelay: 1
 --- !u!114 &114860101924291608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3059,7 +3040,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

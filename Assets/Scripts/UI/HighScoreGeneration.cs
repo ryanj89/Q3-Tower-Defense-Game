@@ -40,7 +40,6 @@ public class HighScoreGeneration : MonoBehaviour {
 		// check for errors
 		if (www.error == null)
 		{
-			Debug.Log("WWW Ok!: " + www.data);
 			data = JsonUtility.FromJson<PlayerInfoResponse>(www.data);
 			renderHighScoreLevel ();
 //			renderHighScoreScore ();
@@ -53,9 +52,7 @@ public class HighScoreGeneration : MonoBehaviour {
 	{
 		anchorName.x -= 108f;
 		anchorScore.x += 108f;
-//		Debug.Log (homePosition);
 		for (var i = 0; i < 10; i++) {
-//			Debug.Log (homePosition);
 			textFieldLevel.text = data.data [i].difficulty.ToString ();
 			Instantiate (textFieldLevel, anchorLevel, Quaternion.Euler (0f, 0f, 0f), parent.transform);
 

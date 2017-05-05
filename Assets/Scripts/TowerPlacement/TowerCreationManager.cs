@@ -41,13 +41,14 @@ public class TowerCreationManager : MonoBehaviour {
 				selectionChange = false;
 			} else {
 
-				if (towerSelector.getTowerCost (selection) < moneyManager.GetBalance()) 
-				{
+				if (towerSelector.getTowerCost (selection) <= moneyManager.GetBalance ()) {
 					
 					translucentManager.destroyTranslucent ();
 					translucentTowerSelected = towerSelector.getCurrentTranslucentTower (selection);
 					translucentManager.createTranslucent (translucentTowerSelected);
 					selectionChange = false;
+				} else {
+					inputManager.setSelection (0);
 				}
 			}
 		}
@@ -57,11 +58,11 @@ public class TowerCreationManager : MonoBehaviour {
 		{
 			if (selection != 0) 
 			{
-				if (towerSelector.getTowerCost (selection) < moneyManager.GetBalance()) {
+				if (towerSelector.getTowerCost (selection) <= moneyManager.GetBalance()) {
 					towerSelected = towerSelector.getCurrentTower (selection);
 					if (solidTowerManager.createTowerSuccesfully (towerSelected)) {
 						moneyManager.Withdraw(towerSelector.getTowerCost (selection));
-						Debug.Log ("money after placing");
+						
 						translucentManager.destroyTranslucent ();
 						inputManager.setSelection (0);
 					}

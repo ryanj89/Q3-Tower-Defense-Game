@@ -53,7 +53,6 @@ public class PostUserName : MonoBehaviour, IPointerClickHandler {
 
 	public void OnPointerClick(PointerEventData PointerEventData)
 	{
-		Debug.Log (userInput.text);
 		UserPost (userInput.text);
 	}
 }

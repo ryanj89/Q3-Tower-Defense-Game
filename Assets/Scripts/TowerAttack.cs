@@ -62,7 +62,7 @@ public class TowerAttack : MonoBehaviour {
 	// 	if(other.gameObject.CompareTag("Enemy"))
 	// 	{
 	// 		// ... the enemy is in range.
-	// 		Debug.Log ("Enemy in range!");
+
 	// 		enemy = other.gameObject;
 	// 		currentTarget = enemy.transform;
 
@@ -75,7 +75,7 @@ public class TowerAttack : MonoBehaviour {
 	// {
 	// 	if (other.gameObject == enemy) 
 	// 	{
-	// 		Debug.Log("Enemy out of range!");
+
 	// 		enemyInRange = false;
 	// 	}
 	// }
@@ -98,7 +98,7 @@ public class TowerAttack : MonoBehaviour {
 				// // If the tower has zero or less health...
 				// if (enemyHealth.currentHealth <= 0f)
 				// {
-				// 	Debug.Log ("Target Dead");
+
 				// 	// Search for a new target in range.
 				// 	ScanForEnemies ();
 				// }

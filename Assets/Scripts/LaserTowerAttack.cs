@@ -39,14 +39,14 @@ public class LaserTowerAttack : MonoBehaviour
 
     void Update ()
     {
-		
         if (currentTarget == null || Vector3.Distance(transform.position, currentTarget.position) > attackRange)
         {
             if (lineRenderer.enabled == true)
             {
                 lineRenderer.enabled = false;
-				isPlayingSound = false;
-				fireSound.Stop ();
+                laserParticles.gameObject.SetActive(false);
+                isPlayingSound = false;
+                fireSound.Stop ();
             }
             return;
         }
@@ -64,10 +64,10 @@ public class LaserTowerAttack : MonoBehaviour
         if (lineRenderer.enabled != true)
         {
             lineRenderer.enabled = true;
-			if (isPlayingSound == false) {
-				isPlayingSound = true;
-				fireSound.Play ();
-			}
+            if (isPlayingSound == false) {
+                isPlayingSound = true;
+                fireSound.Play ();
+            }
         }
         laserParticles.transform.LookAt(hitPoint);
         laserParticles.gameObject.SetActive (true);
@@ -81,8 +81,8 @@ public class LaserTowerAttack : MonoBehaviour
         {
             laserParticles.gameObject.SetActive (false);
             lineRenderer.enabled = false;
-			isPlayingSound = false;
-			fireSound.Stop ();
+            isPlayingSound = false;
+            fireSound.Stop ();
         }
     }
 

@@ -1288,7 +1288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 936476d8ae0a545b582415bb4af6164b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slowRate: 0.7
+  slowRate: 0.55
   attackRadius: 18
   attackPulseRate: 1
   slowDuration: 3
@@ -1372,7 +1372,7 @@ MonoBehaviour:
   currentHealth: 160
   slider: {fileID: 114846965437730442}
   fillImage: {fileID: 114738142983734562}
-  fullHealthColor: {r: 0, g: 1, b: 0, a: 1}
+  fullHealthColor: {r: 0, g: 1, b: 0, a: 0.509}
   zeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
   destructionManager: {fileID: 0}
   towerAttack: {fileID: 0}
@@ -1488,6 +1488,7 @@ MonoBehaviour:
   towerCost: 150
   sellForAmt: 175
   upgradeCost: 0
+  isNotRubble: 1
   diamondCost: 11
   diamondUpgradeCost: 0
 --- !u!135 &135840279193774622

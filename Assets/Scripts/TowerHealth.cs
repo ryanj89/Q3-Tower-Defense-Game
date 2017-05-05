@@ -38,8 +38,8 @@ public class TowerHealth : MonoBehaviour
 
 	private void OnEnable()
 	{
-
-		SetHealthUI();
+		slider.value = 10000f;
+		fillImage.color = Color.Lerp (zeroHealthColor, fullHealthColor, currentHealth / startingHealth);
 	}
 
 

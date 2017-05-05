@@ -676,6 +676,7 @@ MonoBehaviour:
   towerCost: 0
   sellForAmt: 15
   upgradeCost: 0
+  isNotRubble: 0
   diamondCost: 0
   diamondUpgradeCost: 0
 --- !u!114 &114397444378756834

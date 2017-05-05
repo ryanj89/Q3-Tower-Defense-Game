@@ -492,7 +492,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.305
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -574,7 +574,7 @@ MonoBehaviour:
   currentHealth: 100
   slider: {fileID: 114511599568993040}
   fillImage: {fileID: 114896004147596710}
-  fullHealthColor: {r: 0, g: 1, b: 0, a: 1}
+  fullHealthColor: {r: 0, g: 1, b: 0, a: 0.516}
   zeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
   destructionManager: {fileID: 0}
   towerAttack: {fileID: 0}
@@ -671,9 +671,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 167fd61ba07e649d2a8ab9bfe72a3faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 10
+  range: 20
   timeBetweenAttacks: 2.5
-  attackDamage: 3
+  attackDamage: 80
   currentTarget: {fileID: 0}
   projectilePrefab: {fileID: 1572931435819944, guid: 269a736dded0c489fac874d0db4b0f1b,
     type: 2}

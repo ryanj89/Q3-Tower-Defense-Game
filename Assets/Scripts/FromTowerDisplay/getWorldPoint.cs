@@ -26,14 +26,9 @@ public class getWorldPoint : MonoBehaviour {
 			if (ground.Raycast (ray, out distance)) {
 				Vector3 hitPoint = ray.GetPoint (distance);
 				Vector3 newPoint = camera.ScreenToWorldPoint (hitPoint);
-//				newPoint.z = 
-
-
-//				Debug.Log (imgPosition.anchoredPosition3D);s
 				Vector3 mousePos = Input.mousePosition;
 				mousePos.y -= camera.rect.position.x;
 				imgPosition.anchoredPosition3D = mousePos;
-//				Debug.Log (newPoint);
 			}
 		}
 	}

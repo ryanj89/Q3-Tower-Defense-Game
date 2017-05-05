@@ -305,7 +305,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c36d0dd2c575b41c685d824c58abcf2d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.608
+  m_Volume: 0.421
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -429,6 +429,7 @@ MonoBehaviour:
   towerCost: 100
   sellForAmt: 50
   upgradeCost: 100
+  isNotRubble: 1
   diamondCost: 0
   diamondUpgradeCost: 0
 --- !u!114 &114270118054596122
@@ -566,14 +567,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de85855d73a774c0984cf4abbd2378f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 10
+  attackRange: 20
   attackDamageRate: 1
   attackDamage: 3
   rotationSpeed: 10
   firePoint: {fileID: 4263263670995616}
   lineRenderer: {fileID: 120599211738781328}
   currentTarget: {fileID: 0}
-  laserParticlePrefab: {fileID: 1837545260499062, guid: c764c835ae15e4600b79d270e3401c50,
+  laserParticlePrefab: {fileID: 1904654837649942, guid: ab462e37970a245389a6922d4a82a544,
     type: 2}
   fireSound: {fileID: 0}
   laserFire: {fileID: 8300000, guid: 7e80ca94844e74783978b75560c9bc1c, type: 3}
@@ -644,14 +645,20 @@ LineRenderer:
         inSlope: 0
         outSlope: 0
         tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-      m_RotationOrder: 4
+      m_RotationOrder: 0
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 0.22745098}
-      key1: {r: 0.24264705, g: 1, b: 0.87464494, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 1}
+      key0: {r: 0.40821797, g: 0.36689016, b: 0.5735294, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0.22745098}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -679,7 +686,7 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
   m_UseWorldSpace: 1
   m_Loop: 0
 --- !u!136 &136268305243792288

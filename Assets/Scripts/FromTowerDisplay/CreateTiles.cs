@@ -32,12 +32,10 @@ public class CreateTiles : MonoBehaviour {
 
 
 //		tileDimensions = plane_tile.GetComponent <MeshRenderer> ().bounds.size;
-//		Debug.Log (tileDimensions);
 //		tileX = tileDimensions.x;
 //		tileY = tileDimensions.z;
 		tileX = tileSizeX;
 		tileY = tileSizeY;
-//		Debug.Log (tileY);
 
 		snapLocation.tileDimensions = tileDimensions;
 		snapLocation.tileRotation = rotation;

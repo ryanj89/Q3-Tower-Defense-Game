@@ -10,21 +10,17 @@ public class PlayOfflinePress : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
 	public void OnPointerClick(PointerEventData PointerEventData) 
 	{
-//		Debug.Log ("ping");
 		SceneManager.LoadScene("MainMenu");
 	}
 
 	public void OnPointerEnter(PointerEventData PointerEventData)
 	{
-		Debug.Log ("I'm in!");
 	}
 
 	public void OnPointerExit(PointerEventData PointerEventData)
 	{
-		Debug.Log ("I'm out!!");
 	}
 
 	public void OnPointerDown(PointerEventData PointerEventData) {
-		Debug.Log("Pointer Down");
 	}
 }

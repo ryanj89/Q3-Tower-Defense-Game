@@ -12,7 +12,6 @@ public class PatrolAction : Action
 
     private void Patrol (StateController controller)
     {
-//        Debug.Log("PATROL ACTION");
         controller.navMeshAgent.destination = controller.playerBase.position;   // Set destination to player's base
         controller.navMeshAgent.isStopped = false;
     }

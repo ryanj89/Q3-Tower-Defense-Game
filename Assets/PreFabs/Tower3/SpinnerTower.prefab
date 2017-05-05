@@ -615,7 +615,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1598810062679142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.59821, y: 0.14071764, z: 30.120975}
+  m_LocalPosition: {x: 269.97607, y: 87.36701, z: 30.120975}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 4305213210759802}
@@ -1792,7 +1792,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ddf602f9eb9ca4b02861752f6df6b253, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.288
+  m_Volume: 0.437
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2018,7 +2018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 936476d8ae0a545b582415bb4af6164b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slowRate: 0.92
+  slowRate: 0.85
   attackRadius: 15
   attackPulseRate: 1
   slowDuration: 3
@@ -2113,6 +2113,7 @@ MonoBehaviour:
   towerCost: 135
   sellForAmt: 65
   upgradeCost: 115
+  isNotRubble: 1
   diamondCost: 0
   diamondUpgradeCost: 0
 --- !u!114 &114952756111930990
@@ -19786,7 +19787,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1021315163
+  randomSeed: 1235340745
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -22670,7 +22671,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1666414974
+  randomSeed: -445716682
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -25602,7 +25603,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1006775943
+  randomSeed: 2042981724
   InitialModule:
     serializedVersion: 3
     enabled: 1

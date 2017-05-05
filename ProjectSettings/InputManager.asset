@@ -361,9 +361,9 @@ InputManager:
     m_Name: NullSelect
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
+    negativeButton: c
     positiveButton: 0
-    altNegativeButton: 
+    altNegativeButton: c
     altPositiveButton: 
     gravity: 1000
     dead: 0.001
@@ -378,7 +378,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: 5
+    positiveButton: x
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -442,7 +442,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: 6
+    positiveButton: u
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -458,7 +458,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: 6
+    positiveButton: u
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000

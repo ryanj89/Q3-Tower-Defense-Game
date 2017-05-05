@@ -58,10 +58,6 @@ public class Manager : MonoBehaviour
 			playerInfo.score = playerStats.totalScore;
 			playerInfo.kills = playerStats.enemyKills;
 
-			Debug.Log (playerInfo.duration);
-			Debug.Log (playerInfo.difficulty);
-			Debug.Log (playerInfo.score);
-			Debug.Log (playerInfo.kills);
 			scoreSubmission.HighScoreSubmit (playerInfo);
 		}
 		else
@@ -73,8 +69,29 @@ public class Manager : MonoBehaviour
 		
 	private IEnumerator RoundStarting()
 	{
-		waveSpawner.SpawnWave(1 + (((roundNumber * roundNumber) * (roundNumber + 1) + 4) / 2), 2f);
-		Debug.Log ("Round " + roundNumber + " starting!");
+		int numOfEnemies = (roundNumber * roundNumber * 5 + 25)/6;
+		int numOfGromm = 0;
+		int numOfRedGromm = 0;
+		if (numOfEnemies > 150) 
+		{
+			numOfGromm = (numOfEnemies - 150) / 12;
+			numOfEnemies = 150;
+		}
+		if (numOfGromm > 5) {
+			numOfRedGromm = (numOfGromm - 5) / 2;
+			numOfGromm = 5;
+		}
+		waveSpawner.SpawnWave(numOfEnemies, roundNumber);
+
+		if (roundNumber % 3 == 0 || roundNumber >= 8) 
+		{
+			waveSpawner.SpawnGromm ((roundNumber / 3) + numOfGromm);
+		}
+		if (roundNumber % 7 == 0 || roundNumber >= 10) 
+		{
+			waveSpawner.SpawnRedGromm ((roundNumber / 7) + numOfRedGromm);
+		}
+
 
 		waveText.text = "Wave " + roundNumber;
 
@@ -85,7 +102,6 @@ public class Manager : MonoBehaviour
 		
 	private IEnumerator RoundPlaying()
 	{
-		Debug.Log("Round " + roundNumber + " playing!");
 		while (!NoEnemiesLeft() && !GameOver())
 		{
 			yield return null;
@@ -95,7 +111,6 @@ public class Manager : MonoBehaviour
 	private IEnumerator RoundEnding() 
 	{
 		int roundBonus = (1 + (int)Mathf.Floor(Mathf.Log (roundNumber))) * 5;
-		Debug.Log ("Round " + roundNumber + " ending!");
 		yield return EndWait;
 	}
 		
@@ -103,16 +118,17 @@ public class Manager : MonoBehaviour
 	{
 		GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 						
-		return enemies.Length <= 0;
+		return enemies.Length <= 2;
 	}
 
 	public bool GameOver()
 	{
-		if (coreHealth.currentHealth <= 0f) 
-		{
-			Debug.Log ("Game Over");
-		}
-
 		return coreHealth.currentHealth <= 0f;
 	}
+	public int getRoundNumber() 
+	{
+		return roundNumber;
+	}
 }
+
+

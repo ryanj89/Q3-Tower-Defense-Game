@@ -66,18 +66,15 @@ public class FollowMouseAndClick : MonoBehaviour {
 //		currentSelection = storedCurrentSelection;
 //		placeSelection ();
 
-//		Debug.Log ("where is working?");
 	}
 
 //	public void OnMouseOver()
 //	{
-////		Debug.Log ("over");
 //	}
 
 	public void OnMouseExit()
 	{
 		insideArea = false;
-//		Debug.Log ("where is working exit?");
 	}
 
 	void Start () 
@@ -106,17 +103,14 @@ public class FollowMouseAndClick : MonoBehaviour {
 //
 //	void Tower1ButtonClick()
 //	{
-//		Debug.Log("You have clicked the button for t1!");
 //		currentSelection = 1;
 //	}
 //	void Tower2ButtonClick()
 //	{
-//		Debug.Log("You have clicked the button for t2!");
 //		currentSelection = 2;
 //	}
 //	void Tower3ButtonClick()
 //	{
-//		Debug.Log("You have clicked the button for t3!");
 //		currentSelection = 3;
 //	}
 
@@ -196,7 +190,6 @@ public class FollowMouseAndClick : MonoBehaviour {
 
 	void Test()
 	{
-		Debug.Log ("this seemed towork");
 	}
 
 	void Spawn() 
@@ -211,7 +204,6 @@ public class FollowMouseAndClick : MonoBehaviour {
 	IEnumerator resetCreate()
 	{
 		yield return new WaitForSeconds(cooldown);
-		Debug.Log ("Cooldown Happenin");
 		allowCreation = true;
 	}
 		

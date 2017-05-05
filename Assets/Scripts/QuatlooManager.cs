@@ -18,7 +18,7 @@ public class QuatlooManager : MonoBehaviour
 
 	void Awake ()
 	{
-		balance = 150;
+		balance = 250;
 		text = scoreText.GetComponent <Text> ();
 
 		diamonds = 0;
@@ -49,7 +49,7 @@ public class QuatlooManager : MonoBehaviour
 
 	public void Withdraw(int amount)
 	{
-		if (balance > amount) 
+		if (balance >= amount) 
 		{
 			
 			balance -= amount;

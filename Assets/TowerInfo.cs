@@ -8,6 +8,7 @@ public class TowerInfo : MonoBehaviour {
 	public int towerCost;
 	public int sellForAmt;
 	public int upgradeCost;
+	public bool isNotRubble = true;
 
 	public int diamondCost;
 	public int diamondUpgradeCost;

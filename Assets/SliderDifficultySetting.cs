@@ -36,7 +36,6 @@ public class SliderDifficultySetting : MonoBehaviour {
 			index = difLevel.value;
 		}
 		if (soundOn == true) {
-//			Debug.Log ("pang");
 			if (difLevel.value == 0f) {
 				difText.text = "Beginner";
 				zap.Play (); 

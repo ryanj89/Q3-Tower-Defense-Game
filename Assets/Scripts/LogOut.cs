@@ -19,13 +19,12 @@ public class LogOut : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 
 	public void OnPointerClick(PointerEventData PointerEventData) 
 	{
-//		Debug.Log ("ping");
 		Application.ExternalEval ("logOut()");
 	}
 
 	public void OnPointerEnter(PointerEventData PointerEventData)
 	{
-//		Debug.Log ("I'm in!");
+
 
 	}
 
@@ -35,7 +34,7 @@ public class LogOut : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 	}
 
 	public void OnPointerDown(PointerEventData PointerEventData) {
-//		Debug.Log("Pointer Down");
+
 	}
 
 

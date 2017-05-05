@@ -586,7 +586,7 @@ MonoBehaviour:
   currentHealth: 140
   slider: {fileID: 114240818409964484}
   fillImage: {fileID: 114905957291169960}
-  fullHealthColor: {r: 0, g: 1, b: 0, a: 1}
+  fullHealthColor: {r: 0, g: 1, b: 0, a: 0.528}
   zeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
   destructionManager: {fileID: 0}
   towerAttack: {fileID: 0}
@@ -665,9 +665,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 167fd61ba07e649d2a8ab9bfe72a3faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 12
+  range: 24
   timeBetweenAttacks: 1.7
-  attackDamage: 3
+  attackDamage: 87
   currentTarget: {fileID: 0}
   projectilePrefab: {fileID: 1572931435819944, guid: a12bac71999be4baab6d746053de80b8,
     type: 2}

@@ -30,7 +30,6 @@ public class SolidTowerManager : MonoBehaviour {
 	IEnumerator resetPermission()
 	{
 		yield return new WaitForSeconds(cooldown);
-//		Debug.Log ("Cooldown Done");
 		justCreated = false;
 	}
 		

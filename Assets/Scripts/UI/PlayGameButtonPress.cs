@@ -18,23 +18,19 @@ public class PlayGameButtonPress : MonoBehaviour, IPointerClickHandler, IPointer
 
 	public void OnPointerClick(PointerEventData PointerEventData) 
 	{
-//		Debug.Log ("ping");
 		Application.ExternalEval ("logIn()");
 	}
 
 	public void OnPointerEnter(PointerEventData PointerEventData)
 	{
-//		Debug.Log ("I'm in!");
 
 	}
 
 	public void OnPointerExit(PointerEventData PointerEventData)
 	{
-//		Debug.Log ("I'm out!!");
 	}
 
 	public void OnPointerDown(PointerEventData PointerEventData) {
-//		Debug.Log("Pointer Down");
 	}
 
 

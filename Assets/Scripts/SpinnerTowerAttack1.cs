@@ -72,7 +72,6 @@
 //        {
 //          if (collider.CompareTag("Enemy"))
 //          {	
-////            Debug.Log ("Enemy detected!");
 //            enemiesInRange = true;
 //            break;
 //          }
